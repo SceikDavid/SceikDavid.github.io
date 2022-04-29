@@ -26,6 +26,7 @@ p{line-height: 28px; color: #666; font-weight: 300;}
 }
 .logo{z-index: 1;}
 .menu{
+  transition: all 1s cubic-bezier(.215, .61, .355, 1);
   width: 100%;
   z-index: 0;
 }

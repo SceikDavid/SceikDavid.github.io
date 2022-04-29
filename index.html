@@ -9,12 +9,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.css" integrity="sha512-TZTUnuHs1njGko8PJqZlHzqZTZd880A+BvhR1jy1v4mWB4VFKVLG/eK9LYdDjxqNLmttSC1ygmqg6rkYjnEgaQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="header">
+  <div class="header reveal">
     <div class="logo">
       <img src="logo.png"
      width="40"
@@ -36,21 +41,21 @@
     </div>
   </div>
 <div class="hero">
-  <div class="hero__content">
+  <div class="hero__content reveal">
     <p class="extra-text">I TUOI DATI</p>
     <h1 class="big-text">sempre al sicuro.</h1>
     <h2 class="med-text">sempre sul [CLOUD]</h2>
     <a href="get-started.html" class="button">Inizia ora</a>
   </div>
 </div>
-<div class="poster nt-4">
-  <div class="poster__img">
+<div class="poster nt-4 reveal">
+  <div class="poster__img reveal">
     <video src="pc.mp4" muted loop autoplay
     width= 100%
     height= 100%
     />
   </div>
-  <div class="poster__content">
+  <div class="poster__content reveal">
     <img src="logo.png"
    width="200"
    height="200" />
@@ -59,11 +64,11 @@
     <a href="discover.html" class="button">Scopri altro</a>
   </div>
 </div>
-<div class="bg-cover nt-4">
+<div class="bg-cover nt-4 reveal">
   <div class="bg-cover__title">
     <h3 class="big-text tw">I valori che ci definiscono</h3>
   </div>
-  <div class="bg-cover__text">
+  <div class="bg-cover__text reveal">
     <h4 class="normal-text tw">Privacy</h4>
     <p class="tw">La privacy è un diritto umano inalineabile e WebCloud si impegnerà nel proteggere i dati dei propri clienti dalle varie minacce che affliggono gli utenti di tutto il mondo.</p>
     <h4 class="normal-text tw">Eticità</h4>
@@ -80,7 +85,7 @@
     <p class="normal-text nt-5">Stringiamo collaborazioni con molte aziende giorno per giorno per fornirvi un servizio ottimale</p>
   </div>
 </div>
-<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+<div class="main-carousel reveal" data-flickity='{ "cellAlign": "left", "contain": true }'>
   <div class="carousel-cell big-text">ESEMPIO</div>
   <div class="carousel-cell big-text">ESEMPIO</div>
   <div class="carousel-cell big-text">ESEMPIO</div>
@@ -110,19 +115,19 @@
   <div class="carousel-cell big-text">ESEMPIO</div>
   <div class="carousel-cell big-text">ESEMPIO</div>
   <div class="carousel-cell big-text">ESEMPIO</div>
-  <div class="carousel-cell big-text">ESEMPIO</div>t
+  <div class="carousel-cell big-text">ESEMPIO</div>
 </div>
-<div class="poster nt-4">
+<div class="poster nt-4 reveal">
   <div class="poster__content">
-    <h3 class="big-text">La nostra filosofia</h3>
-    <p class="normal-text">Crediamo che vivere secondo valori concreti sia la chiave per raggiungere qualsiasi obbiettivo. Per raggiungere i nostri obbiettivi ci basiamo su tre valori per noi fondamentali che descrivono la nostra filosofia.</lore></p>
+    <h3 class="big-text reveal">La nostra filosofia</h3>
+    <p class="normal-text reveal">Crediamo che vivere secondo valori concreti sia la chiave per raggiungere qualsiasi obbiettivo. Per raggiungere i nostri obbiettivi ci basiamo su tre valori per noi fondamentali che descrivono la nostra filosofia.</lore></p>
   </div>
-  <div class="poster__img">
+  <div class="poster__img reveal">
     <img src="server.png" alt="">
   </div>
 </div>
 <div class="grid panel-blue nt-2">
-  <div class="col panel-blue__dots">
+  <div class="col panel-blue__dots reveal">
     <div class="dot">Andrea Colombino <br> (Designer)</div>
     <div class="dot">Antonio Truvolo <br> (Developer)</div>
     <div class="dot">Ciro Vitiello <br> (Developer)</div>
@@ -194,6 +199,7 @@
       $( ".menu" ).toggleClass("menu--open");
     });
   });
+ScrollReveal().reveal('.reveal', { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)' , interval: 200});
 </script>
 </body>
 </html>
