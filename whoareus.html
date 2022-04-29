@@ -9,12 +9,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.css" integrity="sha512-TZTUnuHs1njGko8PJqZlHzqZTZd880A+BvhR1jy1v4mWB4VFKVLG/eK9LYdDjxqNLmttSC1ygmqg6rkYjnEgaQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="header">
+  <div class="header reveal">
     <div class="logo">
       <img src="logo.png"
      width="40"
@@ -37,23 +38,23 @@
   </div>
 <div class="hero">
   <div class="hero__content">
-    <p class="extra-text">Le nostre INFO</p>
+    <p class="extra-text reveal">Le nostre INFO</p>
   </div>
 </div>
 <div class="grid panel-blue nt-2">
   <div class="col panel-blue__dots">
-    <div class="dot">Andrea Colombino <br> (Designer)</div>
-    <div class="dot">Antonio Truvolo <br> (Developer)</div>
-    <div class="dot">Ciro Vitiello <br> (Developer)</div>
-    <div class="dot">Davide Cardillo <br> (Web Developer)</div>
-    <div class="dot">Emmanuel Iseo <br> (Social Manager)</div>
-    <div class="dot">Pasquale Aucelli <br>(Developer)</div>
-    <div class="dot">Salvatore Vitiello <br>(Developer)</div>
+    <div class="dot reveal">Andrea Colombino <br> (Designer)</div>
+    <div class="dot reveal">Antonio Truvolo <br> (Developer)</div>
+    <div class="dot reveal">Ciro Vitiello <br> (Developer)</div>
+    <div class="dot reveal">Davide Cardillo <br> (Web Developer)</div>
+    <div class="dot reveal">Emmanuel Iseo <br> (Social Manager)</div>
+    <div class="dot reveal">Pasquale Aucelli <br>(Developer)</div>
+    <div class="dot reveal">Salvatore Vitiello <br>(Developer)</div>
   </div>
   <div class="col panel-blue__text">
     <div class="grid">
       <div class="col">
-        <h3 class="big-text tw">La nostra Squadra</h3>
+        <h3 class="big-text tw reveal">La nostra Squadra</h3>
       </div>
     </div>
   </div>
@@ -113,6 +114,7 @@
       $( ".menu" ).toggleClass("menu--open");
     });
   });
+  ScrollReveal().reveal('.reveal', { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)' , interval: 200});
 </script>
 </body>
 </html>

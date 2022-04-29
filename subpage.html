@@ -8,12 +8,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.css" integrity="sha512-TZTUnuHs1njGko8PJqZlHzqZTZd880A+BvhR1jy1v4mWB4VFKVLG/eK9LYdDjxqNLmttSC1ygmqg6rkYjnEgaQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   <lik rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="header">
+  <div class="header reveal">
     <div class="logo">
       <img src="logo.png"
      width="40"
@@ -36,30 +37,30 @@
   </div>
 <div class="hero">
   <div class="hero__content">
-    <p class="extra-text">In arrivo presto</p>
-    <h1 class="big-text">Questa pagina sta venendo ancora sviluppata</h1>
-    <h2 class="med-text">Resta aggiornato</h2>
-    <a href="get-started.html" class="button">Inizia ora</a>
+    <p class="extra-text reveal">In arrivo presto</p>
+    <h1 class="big-text reveal">Questa pagina sta venendo ancora sviluppata</h1>
+    <h2 class="med-text reveal">Resta aggiornato</h2>
+    <a href="get-started.html" class="button reveal">Inizia ora</a>
   </div>
 </div>
 <div class="poster nt-4">
   <div class="poster__img">
-    <video src="hdd.mp4" muted loop autoplay
-    width= 100%
-    height= 100%
-    />
+  <img src="cantiere.png"
+  width= 100%
+  height= 100%
+  >
   </div>
   <div class="poster__content">
-    <h3 class="big-text">Pagina in sviluppo</h3>
-    <p>Questa pagina è ancora in sviluppo, per ulteriori informazioni usare la pagina di Supporto</lore></p>
-    <a href="about.html" class="button">Supporto</a>
+    <h3 class="big-text reveal">Pagina in sviluppo</h3>
+    <p class="reveal">Questa pagina è ancora in sviluppo, per ulteriori informazioni usare la pagina di Supporto</lore></p>
+    <a href="about.html" class="button reveal">Supporto</a>
   </div>
 </div>
-<div class="bg-cover nt-2">
+<div class="bg-cover nt-1 reveal">
   <div class="bg-cover__title">
     <h3 class="big-text tw">I valori che ci definiscono</h3>
   </div>
-  <div class="bg-cover__text">
+  <div class="bg-cover__text reveal">
     <h4 class="normal-text tw">Privacy</h4>
     <p class="tw">La privacy è un diritto umano inalineabile e WebCloud si impegnerà nel proteggere i dati dei propri clienti dalle varie minacce che affliggono gli utenti di tutto il mondo.</p>
     <h4 class="normal-text tw">Eticità</h4>
@@ -68,7 +69,7 @@
     <p class="tw">Da ora in avanti puntiamo al futuro, prevedendo le esigenze e le richieste dei nostri clienti in modo da poter soddisfare ogni esigenza e portando sempre novità.</p>
   </div>
 </div>
-<footer class="footer nt-4">
+<footer class="footer nt-1">
 <div class="grid">
   <div class="col">
     <h4 class="normal-text tw">Pagine</h4>
@@ -123,6 +124,7 @@
       $( ".menu" ).toggleClass("menu--open");
     });
   });
+ScrollReveal().reveal('.reveal', { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)' , interval: 200});
 </script>
 </body>
 </html>

@@ -9,12 +9,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.css" integrity="sha512-TZTUnuHs1njGko8PJqZlHzqZTZd880A+BvhR1jy1v4mWB4VFKVLG/eK9LYdDjxqNLmttSC1ygmqg6rkYjnEgaQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="header">
+  <div class="header reveal">
     <div class="logo">
       <img src="logo.png"
      width="40"
@@ -37,14 +38,14 @@
   </div>
 <div class="hero">
   <div class="hero__content">
-    <p class="extra-text">RIMANI</p>
-    <h1 class="extra-text">SEMPRE AGGIORNATO</h1>
-    <a href="get-started.html" class="button">Inizia ora</a>
+    <p class="extra-text reveal">RIMANI</p>
+    <h1 class="extra-text reveal">SEMPRE AGGIORNATO</h1>
+    <a href="get-started.html" class="button reveal">Inizia ora</a>
   </div>
 </div>
 <div class="grid">
   <div class="grid__social">
-    <div class="col nt-2">
+    <div class="col nt-2 reveal">
       <a target="_blank" href="https://www.instagram.com/webcloudceo/">
         <img src="instagramblack.png"
         width="100"
@@ -53,7 +54,7 @@
       </a>
         <h3 class="normal-text  nt-1">INSTAGRAM</h3>
     </div>
-    <div class="col nt-2">
+    <div class="col nt-2 reveal">
       <a target="_blank" href="https://t.me/WebCloudService">
         <img src="telegramblack.png"
         width="100"
@@ -62,7 +63,7 @@
       </a>
       <h3 class="normal-text  nt-1">TELEGRAM</h3>
     </div>
-    <div class="col nt-2">
+    <div class="col nt-2 reveal">
       <a target="_blank" href="https://discord.com/invite/8ytmUDsKpr">
         <img src="discordblack.png"
         width="100"
@@ -71,7 +72,7 @@
         </a>
           <h3 class="normal-text nt-1">DISCORD</h3>
     </div>
-    <div class="col nt-2">
+    <div class="col nt-2 reveal">
       <a target="_blank" href="https://twitter.com/WebCloud3">
         <img src="twitterblack.png"
         width="100"
@@ -82,7 +83,7 @@
     </div>
   </div>
 </div>
-<div class="poster nt-2">
+<div class="poster nt-2 reveal">
   <div class="poster__img">
 <img src="supp.png" alt="support"
 width= 10px
@@ -153,6 +154,7 @@ height= 10px
       $( ".menu" ).toggleClass("menu--open");
     });
   });
+ScrollReveal().reveal('.reveal', { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)' , interval: 200});
 </script>
 </body>
 </html>
